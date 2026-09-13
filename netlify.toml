@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["shared/**"]
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"
