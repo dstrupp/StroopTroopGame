@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { createRoot } from "react-dom/client";
-import { PTS, scoreWeek, isOptional, blankWeek, fillSlate, slatePrompt, resultsPrompt, nextWednesdayLock, VALID_RESULTS, uid } from "../shared/league.mjs";
+import { PTS, scoreWeek, isOptional, blankWeek, fillSlate, slatePrompt, resultsPrompt, nextWednesdayLock, VALID_RESULTS, uid } from "./league.mjs";
 
 const EMOJIS = ["🏈", "🔥", "🐐", "👑", "🎯", "🦄", "💎", "🚀", "🍀", "🎰", "🦁", "🍕"];
 const RANK_TITLES = ["Troop Commander", "Second in Command", "Sergeant Sure Thing", "Corporal Coin-Flip", "Private Parlay", "Cadet", "Recruit", "Water Boy"];

@@ -1,11 +1,11 @@
 {
   "name": "stroop-troop-pickem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "esbuild src/app.jsx --bundle --minify --outfile=public/app.js --define:process.env.NODE_ENV=\\\"production\\\"",
-    "dev": "netlify dev"
+    "build": "node setup.mjs",
+    "bundle": "esbuild app.jsx --bundle --minify --outfile=app.js --define:process.env.NODE_ENV=\\\"production\\\""
   },
   "dependencies": {
     "@netlify/blobs": "^11.0.3",
